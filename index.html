@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Monthly ovo-vegetarian menu for a family of three in Ontario — weekly meals and grocery lists." />
+  <title>Ontario Vegetarian Family Menu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg" aria-hidden="true"></div>
+  <header class="site-header">
+    <p class="brand">Table &amp; Root</p>
+    <h1>Ontario vegetarian family menu</h1>
+    <p class="lede">A 4-week ovo-vegetarian plan for two adults and a ~3-year-old. Eggs and dairy included. Shop once a week; cook once, share the pot.</p>
+    <ul class="tags">
+      <li>Ontario</li>
+      <li>Eggs + dairy</li>
+      <li>No allergies</li>
+      <li>Fall produce</li>
+    </ul>
+  </header>
+
+  <main>
+    <section class="panel stats" aria-label="Plan overview">
+      <div><strong>4</strong><span>Weekly shops</span></div>
+      <div><strong>21+</strong><span>Dinner ideas</span></div>
+      <div><strong>3+2</strong><span>Meals + snacks</span></div>
+      <div><strong>Fall</strong><span>Season focus</span></div>
+    </section>
+
+    <section class="panel">
+      <h2>How to use this month</h2>
+      <p>Shop from one weekly list at a time. Soft, small pieces for the toddler; same meals for adults. Offer milk (1% or 2%) or fortified soy with meals; water between meals. General meal planning only — not medical advice.</p>
+    </section>
+
+    <section class="panel">
+      <h2>Nutrition anchors</h2>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Nutrient</th><th>Cover it with</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Iron</td><td>Eggs, lentils, beans, tofu, fortified cereal; pair with vitamin C foods</td></tr>
+            <tr><td>Vitamin B12</td><td>Eggs most days; milk, yogurt, cheese; fortified plant milk if used</td></tr>
+            <tr><td>Calcium + D</td><td>Dairy, calcium-set tofu, fortified foods; ask pediatrician about toddler vitamin D</td></tr>
+            <tr><td>Protein</td><td>Eggs + dairy + legumes most days; thin nut/seed butters for toddler</td></tr>
+            <tr><td>Omega-3</td><td>Ground flax/chia in oats; eggs; finely chopped walnuts for adults</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="weeks" aria-labelledby="weeks-heading">
+      <div class="weeks-head">
+        <h2 id="weeks-heading">Weekly menus &amp; grocery lists</h2>
+        <div class="week-tabs" role="tablist" aria-label="Select week">
+          <button type="button" role="tab" aria-selected="true" data-week="0">Week 1</button>
+          <button type="button" role="tab" aria-selected="false" data-week="1">Week 2</button>
+          <button type="button" role="tab" aria-selected="false" data-week="2">Week 3</button>
+          <button type="button" role="tab" aria-selected="false" data-week="3">Week 4</button>
+        </div>
+      </div>
+      <div id="week-panel" class="panel week-panel" role="tabpanel"></div>
+    </section>
+
+    <section class="panel">
+      <h2>Always-on pantry</h2>
+      <p>Eggs, milk, yogurt, cheese, canned beans/lentils, tofu, oats, rice, pasta, whole-grain bread, peanut butter, olive oil, canned tomatoes, iron-fortified cereal, spices (cumin, turmeric, mild chili, cinnamon), frozen berries/peas/spinach.</p>
+      <p class="muted">Ontario year-round: eggs, dairy, carrots, apples, potatoes. Fall focus: squash, kale, cabbage, pears, broccoli.</p>
+    </section>
+
+    <section class="two-col">
+      <div class="panel">
+        <h2>Toddler notes</h2>
+        <p><strong>Texture &amp; safety.</strong> Soft pieces; no whole nuts; thin nut butters; halve grapes. Mix some white rice/pasta with whole grain so fibre does not fill a small stomach too fast.</p>
+        <p><strong>Milk.</strong> Ages 2+: 1% or 2% at meals. Limit juice. Ask your provider about vitamin D.</p>
+      </div>
+      <div class="panel">
+        <h2>Busy-night swap</h2>
+        <p>Any night: eggs + vegetables + grain (toast, rice, or roti). Still a complete vegetarian meal. Freeze doubles of chili, dal, and lasagna in Weeks 1–3 for Week 4.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Sources: Canada’s Food Guide; Ontario Dietitians in Public Health menu patterns; Foodland Ontario seasonal guide; HealthLink BC vegetarian toddler feeding.</p>
+    <p class="muted">Private family plan · Adjust portions to appetite · Check growth with your primary care provider</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
